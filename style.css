@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&family=Poppins:wght@200;300&display=swap');
+
+:root{
+    --lg-font: 'Oswald', sans-serif;
+    --sm-font: 'Poppins', sans-serif;
+    --main: #9b0000;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    cursor: pointer; 
+    text-decoration: none;
+    text-transform: none;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+}
+
+body{
+    font-family: var(--sm-font);
+}
+
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.btn-send{
+    font-size: 16px;
+    background-color: #9b0000 !important;
+    color: white !important;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.2);
+    
+}
+.owl-carousel .owl-dots{
+    padding: 0 15px;
+    text-align: center;
+    margin-top: 20px;
+    color: #9b0000;
+}
+.owl-carousel button.owl-dot{
+    height: 5px;
+    width: 24px;
+    background-color: #f2f2f2;
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.bg-primary{
+    background-color: var(--main) !important;
+}
+
+.navbar > .container{
+    padding: 0 15px;
+    transition:padding 0.5s ease;  
+}
+.navbar-brand img{
+   width: 70px;
+}
+
+.nav-link:hover{
+    color: #9b0000 !important;
+    font-weight: bolder !important;
+}
+
+.nav-item .nav-link{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 0;
+    position: relative;
+}
+
+.navbar .nav-item .nav-link::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    background-color: #9b0000;
+    transition: all 0.5s ease;
+    transform: scale(0);
+}
+
+.navbar .nav-item .nav-link:hover::before{
+    transform: scale(1);
+}
+/* End of navbar STYLING */
+
+/*  */
+#header{
+    background:  linear-gradient(to right, #9b00003d 0%, #9b000063 100%),url(/images/hero.jpg) top/cover no-repeat;
+    /* border-radius: 30% 0 30% 0; */
+}
+
+.btns:not(.nav-btns button){
+    text-decoration: none;
+    background-color: #ffffff;
+    font-weight: normal;
+    color: var(--main);
+    padding: 10px 28px;
+    border-radius: 10px;
+    
+
+}
+
+.btns:not(.nav-btns button):hover{
+    background-color: var(--main);
+    border: none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.heading{
+    font-family: var(--lg-font) !important;
+    font-size: 100px !important;
+}
+/* Home styling */
+.home{
+    padding: 150px 0;
+    min-height: 100vh;
+}
+
+.home h2{
+    color: #9b0000;
+}
+.about .about-title h2{
+    text-align: center;
+}
+
+/* End of the header/home STYLI(NG */
+
+/* Features STYLING */
+.section-padding{
+    padding: 70px 0;
+}
+
+.feature-title{
+    font-size: 40px;
+    color: #000000;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.feature-title h2 span{
+    font-weight: bold;
+    color: var(--main);
+    text-decoration: underline;
+    text-shadow: 0 0 12px 0;
+}
+
+.features .features-item{
+    /* box-shadow: 0 5px 15px rgb(0, 0, 0, 0.2); */
+    /* margin: 10px 0; */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.features .feature-item:hover{
+    background-image: url(/image.jpg);
+}
+
+.features .features-item h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    margin: 0 0 20px;
+    color: black;
+    font-weight: 500;
+}
+.features .features-item p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    margin: 0 0 15px;
+    
+}
+
+.features .features-item .icon{
+    height: 60px;
+    font-size: 30px;
+    margin: 0 auto 30px;
+    text-align: center;
+    line-height: 60px;
+    color: var(--main);
+    position: relative;
+    z-index: 1;
+}
+
+.features .features-item .icon:hover{
+    transition: all 10.s ease-in;
+    color: #000000;
+}
+
+
+
+
+
+/* End of features STYLING */
+
+/* ABOUT STYLING */
+.about{
+    margin: 5;
+    background-color: #f2f2f2;
+}
+.about-img img{
+    width: 100%;
+    border-radius: 32px;
+    animation: bounceTop_01 3s ease infinite;
+}
+
+@keyframes bounceTop_01{
+    0%,
+    100%{
+        transform: translateY(-30px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+}
+.about .about-title h2{
+    text-align: center;
+}
+
+.about-details p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #000;
+    margin: 0 0 15px;
+    font-weight: 300;
+}
+
+.about-detail-info{
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-weight: 300;
+    margin-top: 30px;
+}
+.about-detail-info h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: #9b0000;
+    margin: 0 0 8px;
+}
+
+.about-detail-info span{
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    line-height: 26px;
+    display: block;
+}
+.about-detail-info.style-1{
+    border: solid 2px #9b0000;
+}
+.about-detail-info.style-2{
+    border: solid 2px #9b0000;
+}
+.about-detail-info.style-3{
+    border: solid 2px #9b0000;
+}
+.about-detail-info.style-4{
+    border: solid 2px #9b0000;
+}
+
+/* End Of STYLE */
+
+.details img{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ======== UI Display Section =============*/
+.ui-title{
+    font-size: 40px;
+    color: #000000;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.ui-item{
+    margin: 15px;
+}
+
+.ui-item img{
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin: auto;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+/* ======== End of Display Section ============= */
+
+/* ======== DOWNLOAD Section =============*/
+.download-title{
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    top: 0;
+}
+
+.download{
+    background-image: url(/images/download-app-bg.jpg) ;
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.download::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: var(--main);
+    opacity: 0.3;
+}
+
+.app-download-item{
+    background-color: #ffffff;
+    opacity: 0.8;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.2);
+}
+
+.app-download-item i{
+    font-size: 30px;
+    color: var(--main);
+    display: inline-block;
+}
+.app-download-item h3{
+    font-size: 22px;
+    color: #000000;
+    margin: 20px 0;
+    font-weight: 500;
+}
+.app-download-item p{
+    font-size: 16px;
+    color: #000000;
+    font-weight: 300;
+    margin: 0 0 30px;
+    line-height: 26px;
+    }
+
+.app-download-item a{
+    font-size: 16px;
+    background-color: #9b0000;
+    color: white;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.2);
+    
+}
+
+.app-download-item a:hover{
+    background-color: #ffffff;
+    color: var(--main);
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.3);
+    
+}
+/* ======== End DOWNLOAD Section =============*/
+
+/* ======== FAQ Section =============*/
+.faq-title{
+    font-size: 40px;
+    color: #000000;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 60px;
+    top: 0;
+}
+
+.faq-title span{
+    font-weight: bold;
+    color: var(--main);
+    text-shadow: 0 0 12px 0;
+}
+
+.faq-section .accordion-item{
+    margin-bottom: 20px;
+}
+
+.faq-section .accordion-header{
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.1);
+    padding: 20px 20px;
+}
+
+.faq-section .accordion-item .accordion-button{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--main);
+    margin: 0;
+}
+
+
+/* ======== End of FAQ Section ============= */
+
+
+/* ======== Contact Section ============= */
+.contact-title h2{
+    font-size: 30px;
+    color: #000000;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 60px;
+    top: 0;
+}
+
+.contact-title span{
+    color: var(--main);
+}
+
+.company-info h3{
+    font-size: 22px;
+    color: black;
+    font-weight: 500;
+    margin: 0 0 40px;
+}
+
+.company-info{
+    position: relative;
+    
+}
+.information{
+    padding-left: 55px;
+    margin-bottom: 30px;
+}
+.information i{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    left: 0;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--main);
+    border: 1px solid var(--main);
+    text-align: center;
+    line-height: 36px;
+
+}
+.information h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400 !important;
+    margin: 0 0 10px;
+    color: black;
+}
+
+.information p{
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    line-height: 26px;
+}
+
+.contact-form .form-control{
+    border: 1px solid transparent;
+    box-shadow: 0 5px 15px #9b00001a;
+}
+/* ========End of Contact Section ============= */
+
+/* ========Footer Styling ===================== */
+
+.footer i{
+    font-size: 25px;
+}
+.footer i:hover{
+    color: #9b0000;
+    transition: all 0.3s ease-in-out;
+}
+/* ========End of Footer Styling ===================== */
+
